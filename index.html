@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>Group Seven Website
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+</style>
+</head>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">Pending open assesment</a>
+      <a href="#" class="w3-bar-item w3-button">Freedom wall has a new post</a>
+      <a href="#" class="w3-bar-item w3-button">IPBA due 11:59</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Group Seven</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">Group Seven</h4>
+         <p class="w3-center"><img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234922349627834440/IMG_20240501_014010.jpg?ex=66327e8f&is=66312d0f&hm=6359dc16f05d05461770b863f063e8725431a74444cabe6180243731de667318&" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Students, Apec Schools</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i>Service 8-2</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i>Quarter Four</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Group Members</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p>Andrea Gwyneth Lopez <br>Marian Cassandra Joy Villegas<br>Patrick Bernard Valdez<br> Zooey Ubalde</p>
+            
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p><b>Quarter 1</b> <br>-Puppet show<br>-Action plan<br>-Graphic organizer<br>-Profit Projection<br>-Talata<br>-Background research</p>
+            <p><b>Quarter 2</b><br>-Brain storming techniques and solution<br>-Two step outline<br>-Sanaysay</p>
+            <p><b>Quarter 3</b><br>-Prototype and Usability test<br>-Digestive system worksheet<br>-Industrial revolution worksheet<br>-Teleradyo<br>Relocation Site Plan</p>
+            <p><b>Quarter 4</b><br>-Research about typhoons<br>-Brainstorming<br>-Setting reference locations of typhoons<br>Warning Video about typhoon</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-hide w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234932802001309706/IMG_20240501_021505.jpg?ex=6632884b&is=663136cb&hm=7238c38a408d36b5c36d2d94f026ae677b36b90a6800101b868665ecbe28677a&" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234929992400502804/Screenshot_2023-10-14-16-33-54-855_com.miui.gallery-edit.jpg?ex=663285ae&is=6631342e&hm=a1306cd5a6ede09be2e512c9bfb50820dcb7cc2e172f6da7c3eb3ac0785d3f9e&" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234932802374467664/IMG_20240501_021937.jpg?ex=6632884c&is=663136cc&hm=3bed3f147f5829e0eecd072ce58ced8bffb197dbec6488e514aa35914afbb353&" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234932800919175168/IMG_20240501_021446.jpg?ex=6632884b&is=663136cb&hm=68cd8c6b303a651cda75615f4101c101fb8f94c192663ccc46846007f644832c&" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234932801544126494/IMG_20240501_021547.jpg?ex=6632884b&is=663136cb&hm=4b65c66decec32d6758f7a80de5ed2684efa15cfd78b2a9f256796498f965c21&" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234932022129066096/IMG_20240501_021646.jpg?ex=66328792&is=66313612&hm=271f1792509bfeabdc70410a1e3d47fcdc9c86236591c417ab78380d50abc189&" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Lifelabs</span>
+            <span class="w3-tag w3-small w3-theme-d4">Filipino</span>
+            <span class="w3-tag w3-small w3-theme-d3">Math</span>
+            <span class="w3-tag w3-small w3-theme-d2">Social Studies</span>
+            <span class="w3-tag w3-small w3-theme-d1">Science</span>
+            <span class="w3-tag w3-small w3-theme">English</span>
+            <span class="w3-tag w3-small w3-theme-l1">Mapeh</span>
+            <span class="w3-tag w3-small w3-theme-l2">MCH</span>
+            
+          </p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Alert Box -->
+      <div class="w3-container w3-display-container w3-round w3-theme-l4 w3-border w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-button w3-theme-l3 w3-display-topright">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>Answer your OAs</p>
+      </div>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity"> credits to w3.css for template hihihi</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Cramming</p>
+              <button type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234989573696651274/1e5637aa6eae3385775d1879126cfff2.jpg?ex=6632bd2b&is=66316bab&hm=d00a0e6fe617ebf145f471ee8400614bd6ce0de1f863d6f3db6bea583657c76d&" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 min</span>
+        <h4>Quarter Four</h4><br>
+        <hr class="w3-clear">
+        <p>We were tasked to pick a typhoon that occured in the Philippines. For group #7, we chose typhoon Goni. The first part of our project was to research about this catastrophy in order to answer some of the questions that were stated in our science IPBA. If curious about more details, click the link below! <br> <a href="https://docs.google.com/document/d/1J3-muhTp2vrdUWUkmqwgofc5pPoyuMmQ7y1l3Un1tiM/edit?usp=sharing">Science IPBA</a><br>Up next is our mathematics IPBA. Fpr this second part, there were multiple steps we had to follow, like: A. Identify a typhoon track B. Setting a reference location C. Plotting map locations on the Cartesian plane, and many more. If curious to see my groups work, Make sure to check out the link below! <br><a href="https://docs.google.com/document/d/11z6YSXnKiwudA48YdKapgBJpqUU7SRTipeq25kvUWAg/edit?usp=sharing"> Math IPBA</a><br> The third part of our IPBA is health. Me and my groupmates researched about the following questions shown in our worksheet, this part of the IPBA is also connected to the three cities we gathered in math. Heres the link of our IPBA!<br> <a href="https://docs.google.com/document/d/11s1z5Nd5x7pmL_V-ddVbnkxVwlNWc0tQvamulJKqazI/edit?usp=sharing"> Health IPBA</a><br>The next part of this integrated IPBA is lifelabs, which is the reason why this website is created in the first place. Just like the past IPBAs, the first part in lifelabs was to do research about typhoon Goni in order to learn more information about it. Up next was the creation of brainstorming techniques that could help us possibly find a solution for this problem. If you are curious to see my groups research and brainstorming technique, click the link below!<br> <a href="https://docs.google.com/document/d/1f1IMIWkJWPOUU5b7DuEjwL6UlwIO0Dlb3p5rCxE6U1w/edit?usp=sharing">Lifelabs IPBA</a> <br> And finally, last but not the least is our english IPBA, in which we had to make a script and film a video of us using warning signals and warning phrases in order to warn civilians on what to do, before, during, and after a typhoon. If you are interested in seeing our video, check out the link below! <br> <a href="https://drive.google.com/file/d/1wxnVYDrC_SLLo51NuVQ1nRKL1UERWSyv/view?usp=drivesdk">English IPBA</a></p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              </div>
+        </div>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234989573436866610/154616acaa1d506552c7f79671d0f6e4.jpg?ex=6632bd2b&is=66316bab&hm=da705c25ab2696e2e17d9bef4068324e73b736dc6003e3e1ed1af7ae32a7ea6f&" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">16 min</span>
+        <h4>Quarter three</h4><br>
+        <hr class="w3-clear">
+        <p>During quarter three we were tasked to make and design a preliminary protoype regarding our
+            chosen solution from our ipba. While in quarter one, we discussed the
+            problem, and in quarter 2 we made a solution, now, we are making a
+            preliminary prototype for our solution in order to ensure that we make
+            the most perfect and effective prototype.<br> 
+            <p>Here are the following steps to complete the lifelabs IPBA: <br>- Observe problem and solution<br>- Design and make preliminary prototype.<br>- Make a usability test regarding prototype.<br>- Get approval to publish prototype.<br>- Gain respondents <br>- Preform an audience analysis based on the feedback. <br>- Make presentation about it. <br>- Revise your prototype. <br>- Record presentation. <br>- Input it on the website.</p>
+            <p> If you are curious on knowing more about our lifelabs IPBA from quarter 3, we have a whole website dedicated to it on this link right here! <a href="https://zowiiiiiirfjsdc.github.io/lifelabss/">lifelabs IPBA</a></p>
+            <p> Now, for science of quarter three, it was pretty simple. all my group had to do was to answer a couple of guide questions about how being an informal settler may affect your digestive system. This is the same case for social studies, just some guide questions about the industrial revolution. But as for our english and filipino IPBA, we had to film a video and act as news reporters spreading awareness about informal settlers. Our goal for english was for our body language to be precise and proffesional. Just like lifelabs, our math IPBA was pretty tricky too. Our group had to make a relocation site plan, and throughout the whole year, this was definetly one of the projects that I enjoyed doing most. Make sure to check it out on this link!<br> <a href="https://docs.google.com/document/d/1GKzdTQ71537uRELeck6B8rP9LwPs1V8QhGRumQttJT0/edit?usp=sharing">Math IPBA</a><br> And last but not the least is our health IPBA, it was one of the simplest. We had to pick any sport, and make a presentation about it, talking about the health benefits this sport can possibly give you. Here is the link! <br> <a href=https://docs.google.com/presentation/d/14rzxDIXt_e5DyZ-X6qFsMBMPuxjaG1Gax816HpYOFqA/edit?usp=sharing">PE and Health IPBA</a></p>
+        </p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div>  
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234989573696651274/1e5637aa6eae3385775d1879126cfff2.jpg?ex=6632bd2b&is=66316bab&hm=d00a0e6fe617ebf145f471ee8400614bd6ce0de1f863d6f3db6bea583657c76d&" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Quarter Two</h4><br>
+        <hr class="w3-clear">
+        <p>During the second quarter of lifelabs, we were tasked to create many brain storming techniques, in order to think for a possible solution to our problem, which is wife selling. Our group was able to make four brain storming techniques, and soon enough, we had a list of solutions that we were picking carefully from. if you want to know more, you can check out the link below! <br><a href="https://docs.google.com/document/d/1Da2CfN4O-lq9AUQmKS1hOf0_OeSDAGGCfIZe6QuIov4/edit?usp=sharing">Lifelabs IPBA</a><br>Last is the two step outline in english, but also has to be tranlated into a tagalog, in order for the sanaysay to be complete. If curious about this, click the link down below.<br><a href="https://docs.google.com/document/d/1Do_WoWjonrxZWXF12Ibw49jk4cRfwp-KW6e7jwqB6sQ/edit?usp=sharing">Filipino and English IPBA</a></p>
+        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234989573436866610/154616acaa1d506552c7f79671d0f6e4.jpg?ex=6632bd2b&is=66316bab&hm=da705c25ab2696e2e17d9bef4068324e73b736dc6003e3e1ed1af7ae32a7ea6f&" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">32 min</span>
+        <h4>Quarter one</h4><br>
+        <hr class="w3-clear">
+        <p>For the lifelabs IPBA, there are two parts: The storyboard and the webpage. Both
+            will be discussed below:<br>Our groups storyboard is connected with our Mapeh puppet show, which is also
+            discussed on this webpage. Our storyboard was made and designed off canva.
+            
+            The provided pictures were taken from the Cinderella film, where our puppet
+            show is based off.
+            
+            The provided story is based off from our narration in the puppet show in Mapeh. And for the webpage:<br>The main part of the lifelabs IPBA was to create this webpage in order to
+            brighten our knowledge about html and css.
+            
+            Us students were instructed to create a webpage and put the content of
+            this quarters IPBAs into it.</p>
+            <p>More information about quarter one can be found on the main website:<br><a href="https://zoooooeyy.github.io/lifelabs2/">Website</a></p>
+       <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
+        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+      </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234992434295865354/IMG_20240501_061647.jpg?ex=6632bfd5&is=66316e55&hm=fc564302639b971da1ce52caa86a45a769cf2b039295505d4d0806eb1664fdae&" alt="Forest" style="width:100%;">
+          <p><strong>summerr!!</strong></p>
+          <p>Basta soon</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Friend Request</p>
+          <img src="https://cdn.discordapp.com/attachments/1123574835902161049/1234993099437117480/275f99923b080b18e7b474ed6155a17f.jpg?ex=6632c073&is=66316ef3&hm=f41fa0166824f74286c4961be028d1be4627e8ec420a8e0c9af51fa4ecb8fc54&" alt="Avatar" style="width:50%"><br>
+          <span>Maxe qu naxia</span>
+          <div class="w3-row w3-opacity">
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-green w3-section" title="Accept"><i class="fa fa-check"></i></button>
+            </div>
+            <div class="w3-half">
+              <button class="w3-button w3-block w3-red w3-section" title="Decline"><i class="fa fa-remove"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-16 w3-center">
+        <p>ADS</p>
+      </div>
+      <br>
+      
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 w3-padding-16">
+  <h5>Footer</h5>
+</footer>
+
+<footer class="w3-container w3-theme-d5">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html> 
